@@ -11,7 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
+        with:
+          submodules: 'true'
       - name: Deploy to gh pages
         uses: shalzz/zola-deploy-action@v0.13.0
         env:
